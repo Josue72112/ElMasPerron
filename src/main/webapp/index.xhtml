@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondoo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .left {
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .left img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .left h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .right {
+            width: 75%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .right h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .right h2 {
+            font-size: 1.75rem;
+            margin: 20px 0;
+        }
+        .right p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .right .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skills .skill {
+            text-align: center;
+            margin: 10px;
+        }
+        .skills .skill img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .skills .skill p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .left, .right {
+                width: 100%;
+            }
+            .left img {
+                width: 120px;
+                height: 120px;
+            }
+            .left h2 {
+                font-size: 1.25rem;
+            }
+            .right h1 {
+                font-size: 1.5rem;
+            }
+            .right h2 {
+                font-size: 1.25rem;
+            }
+            .right p {
+                font-size: 0.9rem;
+            }
+            .skills .skill img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Media Queries para pantallas muy pequeñas (teléfonos) */
+        @media (max-width: 480px) {
+            .left img {
+                width: 100px;
+                height: 100px;
+            }
+            .right h1 {
+                font-size: 1.25rem;
+            }
+            .right h2 {
+                font-size: 1rem;
+            }
+            .right p {
+                font-size: 0.85rem;
+            }
+            .skills .skill img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+    
+    
+
+<body>
+<style>
+        body {
+            background-image: url('fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+<div class="container">
+    <!-- Sección izquierda -->
+    <div class="left">
+        <img src="Logo.jpeg" alt="Foto de Perfil" />
+        <h2>#{temas.nombre}</h2>
+        <p>#{temas.carrera}</p><style>
+        body {
+            background-image: url('fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i>Teléfono: +52 466 116 3298</p>
+            <p><i class="fas fa-envelope"></i>Email: josuerente@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i>Ubicación: Salvatierra Gto, Mexico</p>
+        </div>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="right">
+        <h1>Sobre mí</h1>
+        <p>Soy un estudiante de Tecnologías de la Información y Comunicación (TIC) del Instituto Tecnológico de Estudios Superiores de Salvatierra (ITESS). Me considero una persona proactiva, con una gran pasión por la tecnología y un fuerte deseo de aprender y crecer profesionalmente. Durante mi formación, he desarrollado habilidades en programación, gestión de bases de datos y redes, así como en el análisis y diseño de sistemas. Estoy buscando una oportunidad para aplicar mis conocimientos en un entorno laboral dinámico, donde pueda contribuir al éxito de la empresa y continuar desarrollándome como profesional.</p>
+
+        <h2>Educación</h2>
+        <p>Instituto Tecnológico de Estudios Superiores de Salvatierra (ITESS)
+Carrera: Ingeniería en Tecnologías de la Información y Comunicación
+Periodo: 2019 - 2023
+Logros Destacados:
+Participación en proyectos de desarrollo de software y aplicaciones móviles.
+Colaboración en equipos multidisciplinarios para la implementación de soluciones tecnológicas.
+Asistencia a talleres y seminarios sobre las últimas tendencias en TIC.</p>
+
+        <div class="skills">
+             <div class="skill">
+                <img src="educacion.png" alt="Educación" />
+                <p>ITESS</p>
+            </div>
+            <div class="skill">
+                <img src="cambiar.png" alt="Carrera" />
+                <p><strong>Proyecto</strong></p>
+                <ul>
+                    <li>#{temas.proyectoR}</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <img src="certificacion.png" alt="Experiencia" />
+                <ul>
+                    <li>Certificado en Desarrollo Web</li>
+                    <li>Certificado en Seguridad Informática</li>
+                    <li>Prácticas Profesionales en XYZ Tech Solutions
+                        <ul>
+                            <li>Desarrollo de aplicaciones web utilizando HTML</li>
+                            <li>Implementación de medidas de seguridad.</li>
+                            <li>Colaboración en proyectos.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!-- Agregar Font Awesome para los íconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
